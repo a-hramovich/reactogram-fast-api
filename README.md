@@ -1,5 +1,7 @@
 Similar to instagram application with backend written on fastAPI
 
-To run application execute command 
+Install requirements using command 
+`pip install -r requirements.txt`
 
-uvicorn main:app --reload
+To run application execute command
+`uvicorn main:app --reload`
