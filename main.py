@@ -18,7 +18,7 @@ app.include_router(authentication.router)
 app.include_router(image.router)
 
 origins = [
-    'http://localhost:3000',
+    '*',
 ]
 
 app.add_middleware(
