@@ -13,9 +13,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'curl -X 'GET' \
+                sh """curl -X 'GET' \
   'http://127.0.0.1:8001/post/all' \
-  -H 'accept: application/json''
+  -H 'accept: application/json'"""
             }
         }
         stage('Deploy') {
